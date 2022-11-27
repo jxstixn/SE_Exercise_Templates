@@ -26,8 +26,21 @@ public static void main(String[] args) {
 		
         List<HouseholdItem> namesList = Arrays.asList(microwaveOven,tv,wineGlass,coffeeTable,bed,cupboard );
         householdItmes.addAll(namesList);
-		
-  
+
+		PriceCalculator pc = new PriceCalculator();
+
+		for(HouseholdItem elem : householdItmes){
+			System.out.println("Total cost for " + elem.getName() + " is: " + pc.getPrice(elem) + " Euros");
+		}
+
+		System.out.println();
+
+		PackingInstructor pi = new PackingInstructor();
+
+		for(HouseholdItem elem : householdItmes){
+			System.out.println(elem.getName() + ":");
+			System.out.println(pi.getInstructions(elem));
+		}
 }
 
 }

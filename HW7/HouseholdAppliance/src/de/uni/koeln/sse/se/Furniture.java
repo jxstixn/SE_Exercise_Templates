@@ -22,10 +22,12 @@ public class Furniture implements HouseholdItem{
 		this.weight = weight;
 	}
 
+	@Override
+	public void accept(Visitor v) {
+		v.visitFurniture(this);
+	}
 
-	
-
-//Getters and Setters
+	//Getters and Setters
 
 
 
