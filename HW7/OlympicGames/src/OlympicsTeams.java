@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class OlympicsTeams implements Team{
+public class OlympicsTeams implements Team {
     private String name = "Olympia 2024";
     private int athletes;
     private int medals;
@@ -34,7 +34,7 @@ public class OlympicsTeams implements Team{
     @Override
     public void printNameAndAthletes() {
         System.out.println(name);
-        for(Team t : childTeams){
+        for (Team t : childTeams) {
             System.out.print(" ");
             t.printNameAndAthletes();
         }
@@ -46,13 +46,13 @@ public class OlympicsTeams implements Team{
         childTeams.forEach(Team::printNameAndMedals);
     }
 
-    public void addTeam(Team team){
+    public void addTeam(Team team) {
         childTeams.add(team);
         athletes += team.getAthletes();
         medals += team.getMedals();
     }
 
-    public void removeTeam(Team team){
+    public void removeTeam(Team team) {
         childTeams.remove(team);
         athletes -= team.getAthletes();
         medals -= team.getMedals();

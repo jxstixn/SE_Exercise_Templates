@@ -1,4 +1,4 @@
-public class ItalyMensFootball implements Team{
+public class ItalyMensFootball implements Team {
     private String name = "Mens' Football";
     private int athletes;
     private int medals;

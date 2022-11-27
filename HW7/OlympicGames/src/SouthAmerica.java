@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class SouthAmerica implements Team{
+public class SouthAmerica implements Team {
     private String name = "South America";
     private int athletes;
     private int medals;
@@ -34,7 +34,7 @@ public class SouthAmerica implements Team{
     @Override
     public void printNameAndAthletes() {
         System.out.println(name);
-        for(Team t : childTeams){
+        for (Team t : childTeams) {
             System.out.print("  ");
             t.printNameAndAthletes();
         }
@@ -44,19 +44,19 @@ public class SouthAmerica implements Team{
     public void printNameAndMedals() {
         System.out.println(name);
         System.out.println(name);
-        for(Team t : childTeams){
+        for (Team t : childTeams) {
             System.out.print("  ");
             t.printNameAndMedals();
         }
     }
 
-    public void addTeam(Team team){
+    public void addTeam(Team team) {
         childTeams.add(team);
         athletes += team.getAthletes();
         medals += team.getMedals();
     }
 
-    public void removeTeam(Team team){
+    public void removeTeam(Team team) {
         childTeams.remove(team);
         athletes -= team.getAthletes();
         medals -= team.getMedals();

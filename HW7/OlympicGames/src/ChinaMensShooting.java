@@ -1,4 +1,4 @@
-public class ChinaMensShooting implements Team{
+public class ChinaMensShooting implements Team {
     private String name = "Mens' Shooting";
     private int athletes;
     private int medals;

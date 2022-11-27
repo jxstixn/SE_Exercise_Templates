@@ -1,4 +1,4 @@
-public class ChinaWomensArtisticGymnastics implements Team{
+public class ChinaWomensArtisticGymnastics implements Team {
     private String name = "Women's Artistic Gymnastics";
     private int athletes;
     private int medals;

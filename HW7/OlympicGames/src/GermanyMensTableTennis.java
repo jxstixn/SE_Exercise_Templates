@@ -1,4 +1,4 @@
-public class GermanyMensTableTennis implements Team{
+public class GermanyMensTableTennis implements Team {
     private String name = "Mens' Table Tennis";
     private int athletes;
     private int medals;
