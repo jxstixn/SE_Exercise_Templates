@@ -1,10 +1,11 @@
 package de.uni.koeln.sse.se;
 
-public class PackingInstructor implements Visitor{
+public class PackingInstructor implements Visitor {
     private String tmpInstructions;
+
     @Override
     public void visitElectronic(Electronic e) {
-        tmpInstructions =" >should be covered with Polyethylene foam film and packed in a box with dimension " + (e.getHeight()+1) + "x" + (e.getLenght()+1) + "x" + (e.getWidth()+1);
+        tmpInstructions = " >should be covered with Polyethylene foam film and packed in a box with dimension " + (e.getHeight() + 1) + "x" + (e.getLenght() + 1) + "x" + (e.getWidth() + 1);
     }
 
     @Override
@@ -14,10 +15,10 @@ public class PackingInstructor implements Visitor{
 
     @Override
     public void visitGlass(Glass g) {
-        tmpInstructions = " >should be wrapped with Bubble wraps and packed in a box with dimension: " + (g.getHeight()+1) + "x" + (g.getLenght()+1) + "x" + (g.getWidth()+1);
+        tmpInstructions = " >should be wrapped with Bubble wraps and packed in a box with dimension: " + (g.getHeight() + 1) + "x" + (g.getLenght() + 1) + "x" + (g.getWidth() + 1);
     }
 
-    public String getInstructions(HouseholdItem h){
+    public String getInstructions(HouseholdItem h) {
         tmpInstructions = "";
         h.accept(this);
         return tmpInstructions;

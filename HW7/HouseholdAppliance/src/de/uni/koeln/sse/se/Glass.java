@@ -1,65 +1,70 @@
 package de.uni.koeln.sse.se;
 
-public class Glass implements HouseholdItem{
-	
-	String name;
-	int lenght;
-	int width;
-	int height;
+public class Glass implements HouseholdItem {
 
-	int tickness;
+    String name;
+    int lenght;
+    int width;
+    int height;
 
-	
-	public Glass(String name, int lenght, int width, int height, int tickness) {
-		this.name = name;
-		this.lenght = lenght;
-		this.width = width;
-		this.height = height;
-		this.tickness = tickness;
-	
-	}
+    int tickness;
 
-	@Override
-	public void accept(Visitor v) {
-		v.visitGlass(this);
-	}
 
-	//Getters and Setters =
+    public Glass(String name, int lenght, int width, int height, int tickness) {
+        this.name = name;
+        this.lenght = lenght;
+        this.width = width;
+        this.height = height;
+        this.tickness = tickness;
 
-	public int getHeight() {
-		return height;}
+    }
 
-	public void setHeight(int height) {
-		this.height = height;}
+    @Override
+    public void accept(Visitor v) {
+        v.visitGlass(this);
+    }
 
-	public int getLenght() {
-		return lenght;}
+    //Getters and Setters =
 
-	public void setLenght(int lenght) {
-		this.lenght = lenght;}
+    public int getHeight() {
+        return height;
+    }
 
-	public int getWidth() {
-		return width;}
+    public void setHeight(int height) {
+        this.height = height;
+    }
 
-	public void setWidth(int width) {
-		this.width = width;}
+    public int getLenght() {
+        return lenght;
+    }
 
-	public Integer getTickness() {
-		return tickness;}
+    public void setLenght(int lenght) {
+        this.lenght = lenght;
+    }
 
-	public void setTickness(int tickness) {
-		this.tickness = tickness;}
+    public int getWidth() {
+        return width;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setWidth(int width) {
+        this.width = width;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public Integer getTickness() {
+        return tickness;
+    }
 
-	
-	
+    public void setTickness(int tickness) {
+        this.tickness = tickness;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
 
 }
