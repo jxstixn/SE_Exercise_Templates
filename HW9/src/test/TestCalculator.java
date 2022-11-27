@@ -15,12 +15,6 @@ class TestCalculator {
 	public void Should_add_two_numbers_and_return_result() {
 		// Implement
 	}
-
-	@ParameterizedTest
-	@CsvSource({})
-	public void Should_add_two_numbers_and_return_result_parameterized(int valueOne, int valueTwo) {
-		// Implement
-	}
 	
 	@Test
 	public void Should_substract_two_numbers_and_return_result() {
