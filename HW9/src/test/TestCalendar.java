@@ -7,21 +7,10 @@ class TestCalendar {
 
 	@ParameterizedTest
 	@ValueSource()
-	public void Should_return_true(int year) {
+	public void Should_check_if_year_is_leap_also_in_gregorian(int year) {
 		// Implement
 	}
 
-	@ParameterizedTest
-	@ValueSource()
-	public void Should_return_false(int year) {
-		// Implement
-	}
+// Implement test cases for the equivalent partitions 
 
-	@ParameterizedTest
-	@ValueSource()
-	public void Should_return_if_year_is_leap(int year) {
-		// Implement
-	}
-
-	// Create a new method for boundary testing
 }

@@ -16,7 +16,7 @@ public class Calculator {
 	
 	public float divide(int numerator, int denominator) {
 		if (denominator == 0)
-			throw new ArrayIndexOutOfBoundsException("ZeroDivisionError");
+			throw new ArithmeticException("ZeroDivisionError");
 
 		return (float) numerator / denominator;
 	}
